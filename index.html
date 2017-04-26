@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is the Title of the page</title>
+<title> CSS 3 Gradient examples | Session 4 Assignment 4.4</title>
+<style>
+/* Initial box styling */
+.box1,
+.box2,
+.box3 {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  padding-top: 40px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-shadow: 10px 10px 5px #888;
+}
+
+/* Box linear gradient */
+.box1 {
+  background: linear-gradient(to right,red, green);
+}
+
+/* Box cirlce gradient */
+.box2 {
+  background: radial-gradient(circle farthest-corner at 48% 5%, red, yellow, green);
+}
+
+/* Box elleptical gradient */
+.box3 {
+  background: radial-gradient(ellipse farthest-corner at 48% 5%, red, yellow, green);
+}
+
+</style>
 </head>
-
 <body>
-<h1>This is body of the page</h1>
-<p> Anything within the body of a web page is displayed in the main browser window</p>
 
+  <!--Div tags to creat Box-->
+  <div class='box1'>Box</div>
+  <div class='box2'>Box</div>
+  <div class='box3'>Box</div>
+  
 </body>
 </html>
